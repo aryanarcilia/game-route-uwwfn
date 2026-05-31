@@ -1,0 +1,16 @@
+{
+  "name": "uwwfn-analyzer",
+  "version": "1.0.0",
+  "description": "Download and analyze routes of the UWWFN Twine game",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "download": "node src/download.js",
+    "parse": "node src/parse.js",
+    "analyze": "node src/analyze.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}
