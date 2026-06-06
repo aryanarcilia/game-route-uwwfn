@@ -8,6 +8,7 @@
     "download": "node src/download.js",
     "parse": "node src/parse.js",
     "analyze": "node src/analyze.js",
+    "generate": "node src/generate-html.js",
     "start": "node index.js"
   },
   "dependencies": {

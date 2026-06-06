@@ -144,10 +144,14 @@ switch (cmd) {
   case 'analyze':
     run('analyze.js');
     break;
+  case 'generate':
+    run('generate-html.js');
+    break;
   case 'all':
     run('download.js');
     run('parse.js');
     run('analyze.js');
+    run('generate-html.js');
     cmdSummary();
     break;
   case 'summary':
@@ -171,7 +175,8 @@ switch (cmd) {
       'Usage: node index.js <command> [args]',
       '',
       'Commands:',
-      '  all                   Download, parse, analyze, and print summary',
+      '  all                   Download, parse, analyze, generate, and print summary',
+      '  generate              Build data/route.html graph viewer',
       '  download              Download the game HTML to data/game.html',
       '  parse                 Parse passages → data/passages.json',
       '  analyze               Build route graph → data/analysis.json',
