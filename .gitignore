@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Large generated data files (re-create with: node index.js download && node index.js parse)
+data/game.html
+data/passages.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
